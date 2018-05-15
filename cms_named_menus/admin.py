@@ -18,7 +18,8 @@ class LazyEncoder(json.JSONEncoder):
 
 class CMSNamedMenuAdmin(admin.ModelAdmin):
     change_form_template = 'cms_named_menus/change_form.html'
-
+    
+    list_display = ('name',)
     readoly_fields = ('pages_json',)
 
     def change_view(self, request, object_id, form_url='', extra_context={}):

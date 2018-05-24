@@ -1,2 +1,3 @@
 node_modules
 cms_named_menus/static/cmsnamedmenus/vendor/
+django_cms_named_menus.egg-info
